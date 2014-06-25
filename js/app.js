@@ -6,12 +6,25 @@
     var app = angular.module('store', []);
 
     app.controller('StoreController', function(){
-        this.product = gem;
+        this.products = gems;
     });
 
-    var gem = {
+    var gems = [
+    {
         name: 'Test',
         price: 3.50,
         description: 'This is my description',
+        canPurchase: false,
+        soldOut: true
+    },
+
+    {
+        name: 'Test2',
+        price: 3.50,
+        description: 'This is my description again',
+        canPurchase: true,
+        soldOut: false
     }
+
+    ];
 })();
